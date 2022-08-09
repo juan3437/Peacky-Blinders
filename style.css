@@ -96,6 +96,7 @@ h2 {
 }
 
 .carritoShop{
+    position: relative;
     position: fixed;
     top: 35px;
     left: 25px;  
