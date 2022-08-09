@@ -1,0 +1,393 @@
+*{border: 1px solid red;}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+.parallax {
+    background-image: url("./img/peaky-blinders_fondo.jpeg");
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+li{
+    
+    transition: all 0.3s;
+    display: inline;
+    padding: 0.2rem;  
+}
+li:hover{
+    text-decoration: overline;
+    transform: scale(1.1);
+     
+}
+.listaNav li a:hover{
+    animation: cambioColor 10s;
+}
+
+@keyframes cambioColor{
+    0%{
+        color: goldenrod;
+    }
+    5%{
+        color: aliceblue;
+    }
+    100%{
+        color: aliceblue;
+    }
+}
+
+/* ------HEADER----- */
+header{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    border-bottom: goldenrod solid 0.1rem;
+    padding: 2rem;
+    
+    
+}
+
+
+.listaNav li a{
+    color: goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline;
+    
+    
+}
+
+.listaNav{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: end;
+    
+}
+
+
+h2 {
+    color: goldenrod;  
+    text-align: center;
+    font-size: 1.5rem; 
+}
+.back{
+    justify-content: center;
+    
+
+}
+.back:hover{
+    
+    text-decoration: overline;
+}
+
+.carritoShop{
+    position: fixed;
+    top: 35px;
+    left: 25px;  
+}
+svg{
+    
+    transition: all 0.3s;  
+}
+svg:hover{
+
+    transform: scale(1.5);
+}
+/* -------ACTORS------ */
+.containerActors{
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    
+    
+}
+.containerActors::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+
+}
+
+.tituloActors{
+    position: relative;
+}
+.borderActors{
+    border: goldenrod solid 0.05rem;
+}
+.borderActors:hover{
+    box-shadow: 3px 5px 8px whitesmoke;
+}
+
+.fotoActors{
+    padding: 0;
+    margin: auto;
+    position: relative;
+}
+/* ========actorsHtml======== */
+.sinPadding{
+padding: 0;
+
+}
+
+.navActors li a{
+    color: goldenrod;
+}
+.actors1{
+    display: flex;
+    justify-content: center;
+}
+.actors2{
+    display: flex;
+    justify-content: center;
+}
+.actors3{
+    display: flex;
+    justify-content: center;
+}
+.actors4{
+    display: flex;
+    justify-content: center;
+}
+.actors5{
+    display: flex;
+    justify-content: center;
+}
+.actors6{
+    display: flex;
+    justify-content: center;
+}
+.actors7{
+    display: flex;
+    justify-content: center;
+}
+.actors8{
+    display: flex;
+    justify-content: center;
+}   
+/* -------SHOP-------- */
+.containerShop{
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    
+    
+}
+.containerShop::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+.tituloShop{
+    position: relative;
+}
+
+.fotoShop{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s;  
+}
+.imagenShop:hover{
+    border: goldenrod solid 0.1rem;
+    
+}
+
+/* ========shopHtml======= */
+.containerCard{
+    padding: 1rem;
+    
+}
+/* --------NEW-------- */
+.containerNew{
+    padding: 1rem;
+    margin: 1rem;
+    
+    position: relative;
+}
+.containerNew::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+iframe{
+   width: 100%;
+   height: 250px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+@media screen and (min-width: 991px) {
+iframe{
+    height: 420px;
+}}
+@media screen and (min-width: 576px){ 
+    iframe{
+        height: 420px;
+        
+    }
+}
+iframe:hover{
+    border: goldenrod double 0.2rem;
+}
+
+
+h3{
+    color: goldenrod;  
+    text-align: left; 
+}
+p{
+    color: goldenrod;
+    font-size: 1.5rem; 
+    
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+    
+.font-enlace{
+color: #a55c1b;
+}
+.font-enlace:hover{
+animation: cambioColor 10s;
+}
+
+@keyframes cambioColor{
+    0%{
+        color: goldenrod;
+    }
+    5%{
+        color: aliceblue;
+    }
+    100%{
+        color: aliceblue;
+    }
+}
+
+/* ---------Gallery--------- */
+.containerGallery{
+    padding: 1rem;
+    margin: 1rem;
+    
+    position: relative;
+}
+.containerGallery::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.imgGal{
+    padding: 2rem;
+    background-color: black;
+    position: relative;
+}
+img:hover{
+    
+        border: goldenrod solid 0.1rem;
+        
+    }
+
+.tituloGallery{
+    position: relative;
+}
+
+
+/* ---------Behind----------- */
+.containerBehind{
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+}
+.containerBehind::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+.tituloBehind{
+    position: relative;
+}
+/* ---------Footer----------- */
+footer{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    
+    border-top: goldenrod solid 0.1rem;
+    background-color: background-color #a55c1b;
+    background-image: linear-gradient(315deg, #a55c1b 5%, #000000 60%);
+    
+}
+/* ========ActorsHtml======= */
+.padreActors{
+    
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr ;
+        grid-row-gap: 1rem;
+        grid-column-gap: 1rem;
+    }
+.navActors{
+    color: goldenrod;
+}
+
+/* =========behindHtml========= */
+.fotoB{
+    padding: 1rem;
+}
+/* ----------footer----------- */
+.liFooter li a{
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+svg{
+    color: goldenrod;
+}
