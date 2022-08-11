@@ -162,38 +162,11 @@ color: goldenrod;
 .navActors li a{
     color: goldenrod;
 }
-.actors1{
+.actors{
     display: flex;
     justify-content: center;
 }
-.actors2{
-    display: flex;
-    justify-content: center;
-}
-.actors3{
-    display: flex;
-    justify-content: center;
-}
-.actors4{
-    display: flex;
-    justify-content: center;
-}
-.actors5{
-    display: flex;
-    justify-content: center;
-}
-.actors6{
-    display: flex;
-    justify-content: center;
-}
-.actors7{
-    display: flex;
-    justify-content: center;
-}
-.actors8{
-    display: flex;
-    justify-content: center;
-}   
+ 
 /* -------SHOP-------- */
 .containerShop{
     padding: 1rem;
