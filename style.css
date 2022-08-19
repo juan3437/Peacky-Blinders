@@ -366,3 +366,74 @@ footer{
 svg{
     color: goldenrod;
 }
+/* ====form==== */
+.bodyForm{
+    background-color: rgb(208, 188, 152)
+}
+.headerForm{
+    padding: 2rem;
+    background-color: black;
+    border-bottom: goldenrod double 0.2rem;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    
+    color: goldenrod;
+}
+h5{
+    position: relative;
+    color: goldenrod;
+    
+}
+.containerForm{
+    background-color:gray;
+    display: flex;
+    justify-content: center;
+}
+
+.email{
+    color: goldenrod;
+    position: relative;
+}
+.texto{
+    position: relative;
+    color: goldenrod;
+}
+.text{
+    position: relative;
+}
+.formulario{
+    position: relative;
+}
+.boton{
+    position: relative;
+    color: goldenrod;
+}
+.containerForm{
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+}
+.containerForm::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+.botonBack{
+    color: goldenrod;
+   
+}
+h6{
+    color: goldenrod;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    
+}
