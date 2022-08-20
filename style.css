@@ -46,6 +46,28 @@ li:hover{
         color: aliceblue;
     }
 }
+@media screen and (max-width: 768px) {
+    .parallax{
+       background-image: url(./img/fondoQuery.png);
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100%;
+    }
+.fotoActors li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media screen and (max-width: 991px) {
+.fotoActors li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
 
 /* ------HEADER----- */
 header{
@@ -140,7 +162,6 @@ svg:hover{
 }
 
 .fotoActors{
-    padding: 0;
     margin: auto;
     position: relative;
 }
@@ -207,11 +228,19 @@ color: goldenrod;
 }
 .fotoSh{
     width: 100%;
+    height:auto;
+    text-align: center;
 }
 @media screen and (max-width: 768px) {
     .fotoSh{
         width: 18rem;
-    }}
+        text-align: center;
+    }
+div .center{
+    display: flex;
+    justify-content: center;
+}
+}
 /* --------NEW-------- */
 .containerNew{
     padding: 1rem;
