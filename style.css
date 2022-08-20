@@ -12,7 +12,7 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 .parallax {
-    background-image: url("./img/peaky-blinders_fondo.jpeg");
+    background-image: url("./img/peaky-blinders_fondo.jpeg") ;
     
     background-attachment: fixed;
     background-position: center;
@@ -124,7 +124,6 @@ h2 {
     left: 25px;  
 }
 svg{
-    
     transition: all 0.3s;  
 }
 svg:hover{
