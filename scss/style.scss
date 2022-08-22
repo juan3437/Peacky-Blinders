@@ -1,18 +1,14 @@
-
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Luxurious Roman';
 }
 .parallax {
-    background-image: url("./img/peaky-blinders_fondo.jpeg") ;
+    background-image: url("../img/peaky-blinders_fondo.jpeg") ;
     
     background-attachment: fixed;
     background-position: center;
@@ -24,12 +20,11 @@ li{
     
     transition: all 0.3s;
     display: inline;
-    padding: 0.2rem;  
-}
-li:hover{
-    text-decoration: overline;
-    transform: scale(1.1);
-     
+    padding: 0.2rem; 
+    &:hover{
+        text-decoration: overline;
+        transform: scale(1.1);
+    } 
 }
 .listaNav li a:hover{
     animation: cambioColor 10s;
@@ -48,49 +43,40 @@ li:hover{
 }
 @media screen and (max-width: 768px) {
     .parallax{
-       background-image: url(./img/fondoQuery.png);
+       background-image: url(../img/fondoQuery.png);
        background-attachment: fixed;
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
        width: 100%;
     }
-.fotoActors li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-}
-@media screen and (max-width: 991px) {
-.fotoActors li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-}
-
-/* ------HEADER----- */
+    .fotoActors li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+    @media screen and (max-width: 991px) {
+        .fotoActors li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        }
+/* -----------HEADER----------- */
 header{
-   
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
     border-bottom: goldenrod solid 0.1rem;
     padding: 2rem;
-    
-    
 }
-
-
 .listaNav li a{
     color: goldenrod;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Romanesco';
     display: inline;
-    
-    
 }
-
 .listaNav{
     margin: 1rem;
     padding: 1rem;
@@ -98,10 +84,7 @@ header{
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: end;
-    
 }
-
-
 h2 {
     color: goldenrod;  
     text-align: center;
@@ -109,65 +92,52 @@ h2 {
 }
 .back{
     justify-content: center;
-    
-
+    &:hover{
+        text-decoration: overline;
+    }
 }
-.back:hover{
-    
-    text-decoration: overline;
-}
-
 .carritoShop{
-    
     position: fixed;
     top: 35px;
     left: 25px;  
 }
 svg{
     transition: all 0.3s;  
+    &:hover{
+        transform: scale(1.5); 
+    }
 }
-svg:hover{
-
-    transform: scale(1.5);
-}
-/* -------ACTORS------ */
+/* ----------ACTORS---------- */
 .containerActors{
     position: relative;
     padding: 1rem;
     margin: 1rem;
-    
-    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+    }
 }
-.containerActors::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.5;
-
-}
-
 .tituloActors{
     position: relative;
 }
 .borderActors{
     border: goldenrod solid 0.05rem;
+    &:hover{
+        box-shadow: 3px 5px 8px whitesmoke; 
+    }
 }
-.borderActors:hover{
-    box-shadow: 3px 5px 8px whitesmoke;
-}
-
 .fotoActors{
     margin: auto;
     position: relative;
 }
-
 /* ========actorsHtml======== */
-.padreActors{
-    
+.padreActors{ 
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -175,10 +145,6 @@ svg:hover{
     grid-row-gap: 1rem;
     grid-column-gap: 1rem;
 }
-.navActors{
-color: goldenrod;
-}
-
 .navActors li a{
     color: goldenrod;
 }
@@ -186,29 +152,25 @@ color: goldenrod;
     display: flex;
     justify-content: center;
 }
- 
-/* -------SHOP-------- */
+/* ----------SHOP----------- */
 .containerShop{
     padding: 1rem;
     margin: 1rem;
     position: relative;
-    
-    
-}
-.containerShop::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.5;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+    }   
 }
 .tituloShop{
     position: relative;
 }
-
 .fotoShop{
     margin: auto;
     display: flex;
@@ -218,10 +180,8 @@ color: goldenrod;
 }
 .imagenShop:hover{
     border: goldenrod solid 0.1rem;
-    
 }
-
-/* ========shopHtml======= */
+/* ==========shopHtml========= */
 .containerCard{
     padding: 1rem; 
 }
@@ -240,161 +200,143 @@ div .center{
     justify-content: center;
 }
 }
-/* --------NEW-------- */
+/* -------------NEW------------- */
 .containerNew{
     padding: 1rem;
     margin: 1rem;
-    
     position: relative;
-}
-.containerNew::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: -1;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: -1; 
+    }
 }
 .iframeNew{
-   width: 100%;
-   height: 250px;
-   display: flex;
-   justify-content: center;
-   position: relative;
-}
-@media screen and (min-width: 991px) {
-iframe{
-    height: 420px;
-}}
-@media screen and (min-width: 576px){ 
-    iframe{
-        height: 420px;
-        
-    }
-}
-iframe:hover{
-    border: goldenrod double 0.2rem;
-}
-
-
-h3{
-    color: goldenrod;  
-    text-align: left; 
-}
-p{
-    color: goldenrod;
-    font-size: 1.5rem; 
-    
-}
-
-.text{
+    width: 100%;
+    height: 250px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     position: relative;
-}
-    
-.font-enlace{
-color: #a55c1b;
-}
-.font-enlace:hover{
-animation: cambioColor 10s;
-}
-
-@keyframes cambioColor{
-    0%{
+ }
+ @media screen and (min-width: 991px) {
+    iframe{
+        height: 420px;
+    }}
+    @media screen and (min-width: 576px){ 
+        iframe{
+            height: 420px;
+            
+        }
+    }
+    iframe:hover{
+        border: goldenrod double 0.2rem;
+    }
+    h3{
+        color: goldenrod;  
+        text-align: left; 
+    }
+    p{
         color: goldenrod;
+        font-size: 1.5rem; 
     }
-    5%{
-        color: aliceblue;
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
     }
-    100%{
-        color: aliceblue;
-    }
-}
-
-/* ---------Gallery--------- */
+    .font-enlace{
+        color: #a55c1b;
+        &:hover{
+            animation: cambioColor 10s; 
+        }
+        }
+        @keyframes cambioColor{
+            0%{
+                color: goldenrod;
+            }
+            5%{
+                color: aliceblue;
+            }
+            100%{
+                color: aliceblue;
+            }
+        }
+    /* -----------Gallery----------- */
 .containerGallery{
     padding: 1rem;
     margin: 1rem;
-    
     position: relative;
-}
-.containerGallery::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.5;
-}
-
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+    }
+}    
 .imgGal{
     padding: 2rem;
     background-color: black;
     position: relative;
 }
 img:hover{
-    
-        border: goldenrod solid 0.1rem;
-        
-    }
-
+    border: goldenrod solid 0.1rem;
+}
 .tituloGallery{
     position: relative;
 }
-
-
-/* ---------Behind----------- */
+/* -----------Behind------------- */
 .containerBehind{
     padding: 1rem;
     margin: 1rem;
     position: relative;
-}
-.containerBehind::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.5;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5; 
+    }
 }
 .tituloBehind{
     position: relative;
 }
-/* =========behindHtml========== */
+/* ===========behindHtml============ */
 .fotoB{
     padding: 1rem;
 }
-/* ---------Footer----------- */
+/* --------------Footer-------------- */
 footer{
     padding: 1rem;
     margin-top: 1rem;
     width: 100%;
-    
     border-top: goldenrod solid 0.1rem;
     background-color: background-color #a55c1b;
     background-image: linear-gradient(315deg, #a55c1b 5%, #000000 60%);
-    
 }
 .liFooter li a{
     color: goldenrod;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
 }
 svg{
     color: goldenrod;
 }
-/* ====form==== */
+/* ============formHtml============ */
 .bodyForm{
     background-color: rgb(208, 188, 152)
 }
@@ -406,20 +348,17 @@ svg{
     justify-content: center;
 }
 h1{
-    
     color: goldenrod;
 }
 h5{
     position: relative;
     color: goldenrod;
-    
 }
 .containerForm{
     background-color:gray;
     display: flex;
     justify-content: center;
 }
-
 .email{
     color: goldenrod;
     position: relative;
@@ -433,6 +372,8 @@ h5{
 }
 .formulario{
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .boton{
     position: relative;
@@ -442,26 +383,20 @@ h5{
     position: relative;
     padding: 1rem;
     margin: 1rem;
-}
-.containerForm::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.5;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+    }
 }
 .botonBack{
     color: goldenrod;
-   
 }
 h6{
     color: goldenrod;
-}
-.formulario{
-    display: flex;
-    flex-direction: column;
-    
 }
