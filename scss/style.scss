@@ -5,7 +5,7 @@
 }
 body{
     background-color: black;
-    font-family: 'Luxurious Roman';
+    font-family: 'Special Elite', cursive;
 }
 .parallax {
     background-image: url("../img/peaky-blinders_fondo.jpeg") ;
@@ -16,31 +16,8 @@ body{
     background-size: cover;
     width: 100%;
 }
-li{
-    
-    transition: all 0.3s;
-    display: inline;
-    padding: 0.2rem; 
-    &:hover{
-        text-decoration: overline;
-        transform: scale(1.1);
-    } 
-}
-.listaNav li a:hover{
-    animation: cambioColor 10s;
-}
 
-@keyframes cambioColor{
-    0%{
-        color: goldenrod;
-    }
-    5%{
-        color: aliceblue;
-    }
-    100%{
-        color: aliceblue;
-    }
-}
+
 @media screen and (max-width: 768px) {
     .parallax{
        background-image: url(../img/fondoQuery.png);
@@ -72,18 +49,31 @@ header{
     border-bottom: goldenrod solid 0.1rem;
     padding: 2rem;
 }
-.listaNav li a{
+.listaNav li a {
     color: goldenrod;
-    font-family: 'Romanesco';
-    display: inline;
-}
-.listaNav{
+    font-family: 'Special Elite', cursive;
     margin: 1rem;
-    padding: 1rem;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: end;
+    transition: all 0.3s;
+    &:hover{
+        animation: cambioColor 10s;
+        text-decoration: overline;
+        transform: scale(1.1);
+    }
+}
+@keyframes cambioColor{
+    0%{
+        color: goldenrod;
+    }
+    5%{
+        color: aliceblue;
+    }
+    100%{
+        color: aliceblue;
+    }
 }
 h2 {
     color: goldenrod;  
@@ -136,6 +126,11 @@ svg{
     margin: auto;
     position: relative;
 }
+.listaAct{
+    display: flex;
+    flex-direction: row;
+
+}
 /* ========actorsHtml======== */
 .padreActors{ 
     width: 100%;
@@ -182,9 +177,7 @@ svg{
     border: goldenrod solid 0.1rem;
 }
 /* ==========shopHtml========= */
-.containerCard{
-    padding: 1rem; 
-}
+
 .fotoSh{
     width: 100%;
     height:auto;
@@ -196,6 +189,7 @@ svg{
         text-align: center;
     }
 div .center{
+    width: 10rem;
     display: flex;
     justify-content: center;
 }
@@ -284,6 +278,14 @@ div .center{
         opacity: 0.5;
     }
 }    
+.carouselFoto{
+    width: 70%;
+    height: auto;
+}
+.caroGal{
+    display: flex;
+    justify-content: center;
+}
 .imgGal{
     padding: 2rem;
     background-color: black;
@@ -332,7 +334,12 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
+    margin: 1rem;
+    &:hover{
+        animation: cambioColor 10s;
+        text-decoration: overline;
+        
+}}
 svg{
     color: goldenrod;
 }
