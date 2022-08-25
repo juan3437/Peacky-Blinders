@@ -20,13 +20,13 @@ body{
 
 @media screen and (max-width: 768px) {
     .parallax{
-       background-image: url(../img/fondoQuery.png);
-       background-attachment: fixed;
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: cover;
-       width: 100%;
-    }
+        background-image: url(../img/fondoQuery.png);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+     }
     .fotoActors li{
         display: flex;
         flex-direction: column;
@@ -63,6 +63,9 @@ header{
         text-decoration: overline;
         transform: scale(1.1);
     }
+}
+ul{
+    list-style-type: none;
 }
 @keyframes cambioColor{
     0%{
@@ -173,9 +176,6 @@ svg{
     position: relative;
     transition: all 0.3s;  
 }
-.imagenShop:hover{
-    border: goldenrod solid 0.1rem;
-}
 /* ==========shopHtml========= */
 
 .fotoSh{
@@ -185,15 +185,22 @@ svg{
 }
 @media screen and (max-width: 768px) {
     .fotoSh{
-        width: 18rem;
+        width: 100%;
         text-align: center;
+    }
+   
+    .cardSh{
+    display: flex;
+    justify-content: center;
     }
 div .center{
     width: 10rem;
+    
     display: flex;
     justify-content: center;
 }
 }
+
 /* -------------NEW------------- */
 .containerNew{
     padding: 1rem;
@@ -229,9 +236,10 @@ div .center{
         }
     }
     iframe:hover{
-        border: goldenrod double 0.2rem;
+      
+        box-shadow: 3px 5px 8px whitesmoke; 
     }
-    
+   
     h3{
         color: goldenrod;  
         text-align: left; 
@@ -288,12 +296,13 @@ div .center{
     justify-content: center;
 }
 .imgGal{
-    padding: 2rem;
+    margin: 0.5rem;
+    padding: 1rem;
     background-color: black;
     position: relative;
 }
 img:hover{
-    border: goldenrod solid 0.1rem;
+    box-shadow: 3px 5px 8px whitesmoke;
 }
 .tituloGallery{
     position: relative;
@@ -341,7 +350,14 @@ footer{
         text-decoration: overline;
         
 }}
+.redes{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
 svg{
+    margin: 1rem;
     color: goldenrod;
 }
 /* ============formHtml============ */

@@ -67,6 +67,10 @@ header {
   transform: scale(1.1);
 }
 
+ul {
+  list-style-type: none;
+}
+
 @-webkit-keyframes cambioColor {
   0% {
     color: goldenrod;
@@ -202,10 +206,6 @@ svg:hover {
   transition: all 0.3s;
 }
 
-.imagenShop:hover {
-  border: goldenrod solid 0.1rem;
-}
-
 /* ==========shopHtml========= */
 .fotoSh {
   width: 100%;
@@ -215,8 +215,12 @@ svg:hover {
 
 @media screen and (max-width: 768px) {
   .fotoSh {
-    width: 18rem;
+    width: 100%;
     text-align: center;
+  }
+  .cardSh {
+    display: flex;
+    justify-content: center;
   }
   div .center {
     width: 10rem;
@@ -261,7 +265,7 @@ svg:hover {
   }
 }
 iframe:hover {
-  border: goldenrod double 0.2rem;
+  box-shadow: 3px 5px 8px whitesmoke;
 }
 
 h3 {
@@ -328,13 +332,14 @@ p {
 }
 
 .imgGal {
-  padding: 2rem;
+  margin: 0.5rem;
+  padding: 1rem;
   background-color: black;
   position: relative;
 }
 
 img:hover {
-  border: goldenrod solid 0.1rem;
+  box-shadow: 3px 5px 8px whitesmoke;
 }
 
 .tituloGallery {
@@ -390,7 +395,14 @@ footer {
   text-decoration: overline;
 }
 
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
 svg {
+  margin: 1rem;
   color: goldenrod;
 }
 
