@@ -145,7 +145,7 @@ svg:hover {
   border: goldenrod solid 0.05rem;
 }
 .borderActors:hover {
-  box-shadow: 3px 5px 8px whitesmoke;
+  box-shadow: 1px 3px 5px whitesmoke;
 }
 
 .fotoActors {
@@ -265,7 +265,7 @@ svg:hover {
   }
 }
 iframe:hover {
-  box-shadow: 3px 5px 8px whitesmoke;
+  box-shadow: 1px 3px 5px whitesmoke;
 }
 
 h3 {
@@ -339,7 +339,7 @@ p {
 }
 
 img:hover {
-  box-shadow: 3px 5px 8px whitesmoke;
+  box-shadow: 1px 3px 5px whitesmoke;
 }
 
 .tituloGallery {
@@ -403,7 +403,7 @@ footer {
 
 svg {
   margin: 1rem;
-  color: goldenrod;
+  color: whitesmoke;
 }
 
 /* ============formHtml============ */
